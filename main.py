@@ -67,12 +67,12 @@ async def show_video():
 
 @app.get("/")
 async def root():
-    return "¡Hola FastAPI!"
+    return "¡Hola FastAPI!", {"url1": "https://users-api-ivu7.onrender.com/video","url2": "https://users-api-ivu7.onrender.com/video"}
 # Url local: http://127.0.0.1:8000
 
 @app.get("/url")
 async def url():
-    return {"url_curso": "https://mouredev.com/python"}
+    return {"url_curso": "https://bigrock.com/python"}
 # Url local: http://127.0.0.1:8000/url
 
 
@@ -85,4 +85,5 @@ async def read_items(ads_id: Annotated[str | None, Cookie()] = None):
 # Detener el server: CTRL+C
 
 # Documentación con Swagger: http://127.0.0.1:8000/docs
+
 # Documentación con Redocly: http://127.0.0.1:8000/redoc
