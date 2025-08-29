@@ -67,7 +67,19 @@ async def show_video():
 
 @app.get("/")
 async def root():
-    return "¡Hola FastAPI!", {"url1": "https://users-api-ivu7.onrender.com/video","url2": "https://users-api-ivu7.onrender.com/video"}
+    return "¡Hola FastAPI!", {"url1": "https://users-api-ivu7.onrender.com/video/",
+                              "url2": "https://users-api-ivu7.onrender.com/products/",
+                              "url3": "https://users-api-ivu7.onrender.com/products/",
+                              "url4": "https://users-api-ivu7.onrender.com/products/0/",
+                              "url5": "https://users-api-ivu7.onrender.com//usersjson/",
+                              "url6": "https://users-api-ivu7.onrender.com//users/1/",
+                              "url7": "https://users-api-ivu7.onrender.com/users/usersquery/?id=1",
+                              "url8": "https://users-api-ivu7.onrender.com/users/user/?id=1",
+                              "url9": "https://users-api-ivu7.onrender.com/users/user/?id=1&name=Enrique",
+                              "url10": "https://users-api-ivu7.onrender.com/userdb/68b0174667180ac48cba2194",
+                              "url11": "https://users-api-ivu7.onrender.com/query/68b0174667180ac48cba2194",
+                              "url12": "https://users-api-ivu7.onrender.com/video/"
+                             }
 # Url local: http://127.0.0.1:8000
 
 @app.get("/url")
@@ -87,3 +99,4 @@ async def read_items(ads_id: Annotated[str | None, Cookie()] = None):
 # Documentación con Swagger: http://127.0.0.1:8000/docs
 
 # Documentación con Redocly: http://127.0.0.1:8000/redoc
+
