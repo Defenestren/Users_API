@@ -1,0 +1,1 @@
+⚠️ Usa 3.11 porque es estable y está soportado en Render.
