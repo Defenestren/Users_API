@@ -1,3 +1,6 @@
+```md
+![pytest](https://img.shields.io/badge/tests-passing-brightgreen)
+
 # Users API
 
 API REST simple para la gestión de usuarios desarrollada con **Python y FastAPI**, creada como proyecto personal con fines formativos para consolidar fundamentos de backend.
