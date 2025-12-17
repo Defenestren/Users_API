@@ -1,16 +1,55 @@
 # Users API
 
-API REST básica creada con FastAPI para gestionar usuarios.
+API REST desarrollada con **FastAPI** como proyecto personal para consolidar fundamentos de backend en Python.
 
-## Tecnologías
+El proyecto implementa un sistema básico de gestión de usuarios con autenticación y operaciones CRUD.
 
-- Python  
-- FastAPI  
-- Uvicorn  
-- (si usas Base de datos, mencionar cuál)
+---
 
-## Instalación
+## Funcionalidades
 
-1. Clonar repositorio
+- Registro y autenticación básica de usuarios
+- Operaciones CRUD sobre usuarios
+- Validación de datos con Pydantic
+- Control básico de errores
+- Documentación automática con Swagger (/docs)
+
+> Proyecto creado con fines formativos. No orientado a producción.
+
+---
+
+## Tecnologías utilizadas
+
+- Python
+- FastAPI
+- Pydantic
+- Uvicorn
+- Pytest (tests básicos)
+
+---
+
+## Estructura del proyecto
+
+Users_API/
+│
+├── main.py
+├── routers/
+│ └── users.py
+├── models/
+│ └── user.py
+├── db/
+│ └── fake_db.py
+├── tests/
+│ └── test_users.py
+├── requirements.txt
+└── README.md
+
+---
+
+## Ejecución en local
+
+### 1. Crear entorno virtual
+
 ```bash
-git clone https://github.com/Defenestren/Users_API.git
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
