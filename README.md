@@ -61,3 +61,11 @@ Users_API/
 ```bash
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
+
+## Tests
+
+El proyecto incluye tests básicos con pytest.
+
+```bash
+pytest
+
