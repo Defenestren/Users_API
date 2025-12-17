@@ -1,20 +1,25 @@
 # Users API
 
-API REST desarrollada con **FastAPI** como proyecto personal para consolidar fundamentos de backend en Python.
+API REST simple para la gestión de usuarios desarrollada con **Python y FastAPI**, creada como proyecto personal con fines formativos para consolidar fundamentos de backend.
 
-El proyecto implementa un sistema básico de gestión de usuarios con autenticación y operaciones CRUD.
+---
+
+## Descripción
+
+El proyecto implementa una API REST que permite registrar usuarios y realizar operaciones CRUD básicas.  
+Está orientado a la práctica de conceptos clave de desarrollo backend: diseño de endpoints, validación de datos, estructura de proyecto y manejo básico de estado.
+
+> Proyecto formativo. No orientado a producción.
 
 ---
 
 ## Funcionalidades
 
-- Registro y autenticación básica de usuarios
+- Registro de usuarios
 - Operaciones CRUD sobre usuarios
 - Validación de datos con Pydantic
 - Control básico de errores
-- Documentación automática con Swagger (/docs)
-
-> Proyecto creado con fines formativos. No orientado a producción.
+- Documentación automática con Swagger (`/docs`)
 
 ---
 
@@ -27,6 +32,7 @@ El proyecto implementa un sistema básico de gestión de usuarios con autenticac
 - Pytest (tests básicos)
 
 ---
+
 ## Estructura del proyecto
 
 <pre>
@@ -43,6 +49,8 @@ Users_API/
 ├── requirements.txt
 └── README.md
 </pre>
+
+> La persistencia se realiza mediante una base de datos en memoria (`fake_db.py`) con fines formativos.
 
 ---
 
