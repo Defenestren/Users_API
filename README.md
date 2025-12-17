@@ -27,7 +27,6 @@ El proyecto implementa un sistema básico de gestión de usuarios con autenticac
 - Pytest (tests básicos)
 
 ---
-
 ## Estructura del proyecto
 
 Users_API/
@@ -42,8 +41,6 @@ Users_API/
 │ └── test_users.py
 ├── requirements.txt
 └── README.md
-
-
 
 ---
 
