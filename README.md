@@ -31,7 +31,6 @@ El proyecto implementa un sistema básico de gestión de usuarios con autenticac
 ## Estructura del proyecto
 
 Users_API/
-│
 ├── main.py
 ├── routers/
 │ └── users.py
