@@ -1,14 +1,37 @@
 # Clase en vídeo: https://youtu.be/_y9qQZXE24A?t=20480
 
 ### Users DB API ###
-
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter
+from db.client import fake_db
 from db.models.user import User
-from db.schemas.user import user_schema, users_schema
-from db.client import db_client
-from bson import ObjectId
+
+router = APIRouter()
+
+@router.get("/users")
+def get_users():
+    return fake_db["users"]
+
+@router.post("/users")
+def create_user(user: User):
+    fake_db["users"].append(user)
+    return user
 
 
+
+
+
+
+@router.get("/users")
+def get_users():
+    return fake_db["users"]
+
+@router.post("/users")
+def create_user(user: User):
+    fake_db["users"].append(user)
+    return user
+
+
+"""
 router = APIRouter(
     prefix="/userdb",
     tags=["userdb"],
@@ -219,3 +242,4 @@ def search_user(field: str, key):
 # Errores de servidor
 #   ■ 500 Internal Server Error (https://developer.mozilla.org/es/docs/Web/HTTP/Reference/Status/500)
 #     El servidor ha encontrado una situación que no sabe cómo manejarla.
+"""
