@@ -1,47 +1,30 @@
 # Users API
 
-API REST desarrollada con **FastAPI** como proyecto personal de aprendizaje, orientada a consolidar fundamentos de desarrollo backend en Python.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-green)
+![Tests](https://img.shields.io/badge/tests-pytest-success)
+![Status](https://img.shields.io/badge/status-learning_project-informational)
 
-El proyecto implementa operaciones básicas de gestión de usuarios, validación de datos y tests automáticos, utilizando una base de datos simulada en memoria.
+API REST desarrollada con **Python y FastAPI** como proyecto personal para consolidar fundamentos de desarrollo backend.
 
----
-
-## Objetivo del proyecto
-
-Este proyecto ha sido creado con fines **formativos**, con el objetivo de:
-
-- Practicar el diseño de una API REST con FastAPI
-- Trabajar con modelos de datos y validación
-- Implementar endpoints CRUD
-- Añadir tests automáticos básicos con pytest
-- Mantener una estructura de proyecto clara y mínima
-
-No está pensado para uso en producción.
+Proyecto centrado en la gestión de usuarios, con operaciones CRUD, validación de datos y tests automatizados, aplicando una estructura clara y buenas prácticas básicas de diseño de APIs.
 
 ---
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
 - Creación de usuarios
 - Listado de usuarios
-- Obtención de un usuario por ID
+- Obtención de usuario por ID
 - Eliminación de usuarios
-- Validación de datos de entrada
-- Respuestas HTTP correctas según el resultado de la operación
+- Validación de datos con Pydantic
+- Persistencia en memoria (fake database)
+- Tests automatizados con pytest
+- Documentación automática con Swagger UI
 
 ---
 
-## Tecnologías utilizadas
-
-- Python 3
-- FastAPI
-- Pydantic
-- Uvicorn
-- Pytest
-
----
-
-## Estructura del proyecto
+## 🗂️ Estructura del proyecto
 
 <pre>
 Users_API/
@@ -62,82 +45,100 @@ Users_API/
 
 ---
 
-## Ejecución en local
+## 🛠️ Tecnologías utilizadas
 
-### 1. Crear entorno virtual
-
-```bash
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-## Tests
+- **Python**
+- **FastAPI**
+- **Pydantic**
+- **Pytest**
+- **Uvicorn**
 
 ---
 
-## Instalación y ejecución
+## ▶️ Ejecución en local
 
-### 2. Clonar el repositorio
-
+### 1️⃣ Clonar el repositorio
 ```bash
-git clone https://github.com/Defenestren/Users_API.git
+git clone https://github.com/Marcial-Godes/Users_API.git
 cd Users_API
+```
 
-pytest
-
----
-
-### 3. Crear y activar entorno virtual
+### 2️⃣ Crear y activar entorno virtual
+```bash
 python -m venv venv
-
-
+```
 Windows
 
+```bash
 venv\Scripts\activate
-
+```
 
 Linux / macOS
 
+```bash
 source venv/bin/activate
+```
 
-### 4. Instalar dependencias
+### 3️⃣ Instalar dependencias
+
+```bash
 pip install -r requirements.txt
+```
 
-### 5. Ejecutar la aplicación
+### 4️⃣ Ejecutar la API
+
+```bash
 uvicorn main:app --reload
-
+```
 
 La API estará disponible en:
 
+```bash
 http://127.0.0.1:8000
+```
 
+Swagger UI:
+
+```bash
+http://127.0.0.1:8000/docs
 ```
 
 ---
 
-### Documentación de la API
+🧪 Tests
 
-FastAPI genera documentación automática accesible en:
+Tests implementados con pytest.
 
-Swagger UI:
+Ejecutar tests:
 
-http://127.0.0.1:8000/docs
+```bash
+pytest
+```
+
+Casos cubiertos:
+
+- Creación de usuarios
+
+- Listado de usuarios
+
+- Eliminación de usuarios
+
+- Respuestas HTTP correctas
 
 ---
 
-### Tests
+### 🎯 Objetivo del proyecto
 
-El proyecto incluye tests básicos con pytest para validar los endpoints principales.
+Proyecto con fines formativos, orientado a practicar:
 
-Ejecutar tests
-pytest
+Diseño de APIs REST
 
+Organización de proyectos backend
 
-Los tests verifican:
+Validación de datos
 
-Creación de usuarios
+Testing automatizado básico
 
-Listado de usuarios
+Uso de FastAPI en un contexto realista
 
-Obtención y eliminación de usuarios
-
-Respuestas HTTP correctas
+No orientado a producción.
